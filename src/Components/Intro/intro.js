@@ -3,12 +3,9 @@ import logo from '../../logo/WhatsApp_Image_2025-03-02_at_19.02.29_8ceed218-remo
 import {Link} from 'react-scroll'
 import resume from '../../images/Thogari Vishwateja.pdf'
 import './intro.css'
-import { jsPDF } from "jspdf";
+
 
 const Intro = () => {
-  const doc = new jsPDF();
-
-doc.save("resume");
   return (
     <section id='intro'>
         <div className='introContent'>
