@@ -1,0 +1,89 @@
+.navbar{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+
+}
+.menuList{
+    margin: 1rem;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: white;
+
+}
+.menuList:hover{
+    color: rgb(78, 161, 178);
+    padding-bottom: 0.5rem;
+    border-radius: 3px solid rgb(113, 180, 209);
+}
+.navBtn{
+    background-color: white;
+    padding: 0.75rem 2rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 2rem;
+    font-size: 15px;
+    font-family: "Roboto";
+    cursor: pointer;
+
+}
+.active{
+    color: aqua;
+    width: 2px;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid aqua;
+}
+.navmenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+.mobileMenu{
+    width: 50px;
+    background: aqua;
+    border-radius: 20%;
+    display: none;
+    /* object-fit: cover; */
+    height: 2.8rem;
+}
+.menuList{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30,30);
+}
+@media screen and (max-width:720px){
+    .mobileMenu{
+        display: flex;
+
+    }
+    .menu{
+        display: none;
+    }
+    .navBtn{
+        display: none;
+    }
+}
