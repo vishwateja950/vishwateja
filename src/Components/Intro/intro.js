@@ -8,7 +8,6 @@ import { jsPDF } from "jspdf";
 const Intro = () => {
   const doc = new jsPDF();
 
-doc.text("Hello world!", 10, 10);
 doc.save("resume");
   return (
     <section id='intro'>
